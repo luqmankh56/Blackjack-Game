@@ -8,14 +8,12 @@ let hasBlackJack = false;
 let isAlive = true;
 
 let messageEl = document.getElementById("message-el");
-console.log(messageEl);
-let sumel = document.getElementById("sum-el");
-
+let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
 function startGame() {
     cardsEl.textContent = "Cards: " + firstcard + " " + secondcard;
-    sumEl.textContent = "Sum: " + sum;
+    sumEl.textContent = "Sum: " + sum;  // Use textContent here as well
 
     if (sum <= 20) {
         message = "Do you want another try?";
